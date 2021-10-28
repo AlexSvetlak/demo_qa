@@ -53,7 +53,7 @@ public class TestTextForm {
         $(byText("Reading")).click();
 
         // загрузка картинки
-        $("#uploadPicture").uploadFile(new File("resources//t8i0r1.jpg"));
+        $("#uploadPicture").uploadFile(new File("src//test//resources//t8i0r1.jpg"));
 
         // Ввод адреса
         $("#currentAddress").setValue("New Yourk, Wall Street 211 B");
@@ -84,9 +84,5 @@ public class TestTextForm {
 
     void verifyData(String label, String value) {
         $(".table-responsive").$(byText(label)).parent().shouldHave(text(value));
-
     }
-
-
-
 }
